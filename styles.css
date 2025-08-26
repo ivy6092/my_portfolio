@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after{
+   box-sizing: border-box; 
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background: radial-gradient(circle at center, #2B2D31 0%, #0E1014 100%);
+    color: #c0c0c0;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+header, section {
+    width: 90%;
+    background: url(https://i.pinimg.com/736x/e5/86/3d/e5863d9beaa2d7515a003e31286fc145.jpg);
+    background-position: center;
+    margin: 0 auto;
+    min-height: 200px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: ;
+}
+h2,h1,p,h3 {
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+}
+header img {
+    width: 70%;
+    margin-left: 50px;
+}
+h1 {
+   font-size: 3rem; 
+}
+h2 {
+    border-bottom: 2px solid #c0c0c0;
+}
+a {
+    text-decoration: none;
+    color: #c0c0c0;
+}
+.certificates a h3, .projects a p{
+    display: block;
+    background-color: rgba(75, 29, 29, 0.4);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.icons{
+    display: flex;
+    font-size: 50px;
+    justify-content: space-between;
+}
