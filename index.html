@@ -5,21 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IVY'S PORTFOLIO</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
-        <!-- add a nav bar in larger screens -->
+        <!-- add a nav bar in larger screens --> 
         <header>
-            <h1>HI! IM IVY</h1>
-            <img src="https://i.pinimg.com/1200x/0c/31/c7/0c31c7783ab783f8aa2483bf3d174bf1.jpg" alt="pic-of-me">
-            <h2>MY PORTFOLIO</h2>
+            <div class="sidebar"></div>
+            <nav class="laptop">
+                <a href="#home"><p>Home</p></a>
+                <a href="#about"><p>About</p></a>
+                <a href="#projects"><p>Projects</p></a>
+                <a href="#certificates"><p>Certificates</p></a>
+                <a href="#contact"><p>Contacts</p></a>
+                <p>Lets Talk 🏳️</p>
+            </nav>
+            <nav class="mobile">
+                <div class="img-container">
+                </div>
+                <a href="#home"><p>Home</p></a>
+                <a href="#about"><p>About</p></a>
+                <a href="#contact"><p>Contact</p></a>
+            </nav>
         </header>
         <main>
-            <section class="about">
+            <section id="home">
+                <h1>HI! IM IVY</h1>
+            <img src="https://i.pinimg.com/1200x/f5/bd/f3/f5bdf329c18d7981ec82e7f7d0a0b8af.jpg" alt="pic-of-me">
+            <h2>MY PORTFOLIO</h2>
+            </section>
+            <section id="about">
                 <h2>ABOUT ME</h2>
                 <p>I'm Ivy Kwamboka Magoma, a passionate designer and aspiring front-end developer dedicated to crafting clean, functional, and engaging digital experiences. I combine creativity with usability, focusing on responsive, accessible designs that solve real problems. I thrive in collaborative environments and love bringing fresh, innovative ideas to life.</p>
             </section>
-            <section class="skills">
+            <section id="skills">
                 <h2>SKILLS</h2>
                 <p>RESPONSIVE WEB DESIGN</p>
                 <ul>
@@ -28,12 +46,12 @@
                 </ul>
             </section>
             <!-- add hover effect in larger screens -->
-            <section class="projects">
+            <section id="projects">
                 <h2>PROJECTS</h2>
                 <a href="https://ivy6092.github.io/activate_web/"><p>Cooperate Website</p></a>
                 <a href="https://github.com/ivy6092/weather--app.git"><p>Weather-App</p></a>
             </section>
-            <section class="experience">
+            <section id="experience">
                <h2>EXPERIENCE</h2> 
                <h3>RESPONSIVE WEB DESIGN</h3> 
                <P>Designed and developed a fully responsive portfolio site using HTML and CSS</P>
@@ -42,7 +60,7 @@
                <h3>CORPORATE WEBSITE FOR ACTIVATE COMMUNITY</h3>
                <p>Designed and developed a fully responsive corporate website to improve the client’s online presence and user engagement.</p>
             </section>
-            <section class="certificates">
+            <section id="certificates">
                 <h2>CERTIFICATES</h2>
                 <a href="#"><h3>BSC IN TELECOMMUNICATION</h3></a>
                 <a href="https://drive.google.com/file/d/1oj3UxeE5iMW9lNPPJilETiEcM_vNUtnf/view?usp=drive_link"><h3>MACHINE LEARNING WITH PYTHON</h3></a>
@@ -50,7 +68,7 @@
                 <a href="https://drive.google.com/file/d/194hegv4C-b9DBa7TKhCxqCE8fs-56RLt/view?usp=drive_link"><h3>SOFTWARE SECURITY</h3></a>
                 <a href="https://drive.google.com/file/d/13qQuFLjAwUo7vppmZL21aBXzaDjmiIpi/view?usp=drive_link"><h3>RESPONSIVE WEB DESIGN</h3></a>
             </section>
-            <section class="contact">
+            <section id="contact">
                 <h2>CONTACTS</h2>
                 <div class="icons">
                 <i class="fa-brands fa-square-facebook"></i>
