@@ -296,6 +296,7 @@ main {
         grid-area: rd;
         display: flex;
         justify-content: center;
+        margin-left: -170px;
     }
 
     /*dark mode*/
