@@ -92,44 +92,241 @@ main {
     height: 30px;
     padding-top: 5px;
 }
-.laptop{
+.laptop, .sidebar, #laptop_home, #laptop_project, #laptop_edu, #laptop_skills, #laptop_cert, #laptop_experience {
     display: none;
 }
-.sidebar{
-    display: none;
-}
+
+
+/*LAPTOP*/
 @media (min-width: 768px){
-    .mobile{
+    .mobile, #home, #about, #skills, #projects, #experience, #certificates, #contact{
         display: none;
+    }
+    #laptop_project, #laptop_edu, #laptop_skills, #laptop_cert, #laptop_experience {
+        display: block;
+    }
+    #laptop_home {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #laptop_home img {
+        height: 60%;
+        border-radius: 50%;
+        transition: transform 0.4s ease-in-out;
+    }
+    #laptop_home img:hover {
+       transform: scale(1.1); 
+    }
+    #laptop_home h1 {
+        width: 50%;
+    }
+    #laptop_project {
+        height: 90vh;
+        background-color:rgba(46, 46, 46, 0.363)
+    }
+    section {
+        margin-top: 70px;
+        margin-bottom: 60px;
+        background-image: none;
+    }
+    .projects img, #laptop_skills img, #laptop_cert img, #laptop_experience img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        height: 60%;
+    }
+    figure {
+       width: 350px;
+       height: 500px;
+       transition: transform 0.4s ease-in-out;
+    }
+    figure:hover {
+        transform: skew(5deg);
+    }
+    figcaption {
+        padding-top: 20px;
+        background-color: transparent;
+        border-radius: 0 0 20px 20px;
+        width: 100%;
+        border: 1px solid gray;
+        border-top: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    figcaption p{text-align: start;}
+
+    #laptop_skills div, .projects,  #laptop_experience div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #laptop_cert {
+        background-color: rgba(46, 46, 46, 0.363);
+    }
+    #laptop_cert div {
+        display: grid;
+        gap: 25px;
+    }
+    .laptop p:hover {
+        color: white;
+        border: 1px solid grey;
+        transform: scale(1.1);
+        box-shadow: 5px 5px 80px rgb(148, 146, 146);
+        padding-bottom: 5px;
+    }
+    .laptop p{
+        transition: transform 0.4s ease-in-out;
     }
     .sidebar{
         display: flex;
         flex-direction: column;
         position: fixed;
-        left: 0;
         height: 100vh;
-        background-color: black;
+        background-color: rgba(46, 46, 46, 0.363);
         top: 0;
-        width: 30%;
+        width: 20%;
         margin: 10px;
         border-radius: 20px;
+        padding: 0 30px;
+        letter-spacing: 1.3px;
     }
+    
     main {
-        margin-left: 30%;
+        margin-left: 20%;
+        background-color: #1f191921;
     }
     .laptop{
         display: flex;
-        margin-left: 33%; 
+        margin-left: 23%; 
         justify-content: space-between;
         position: fixed;
         top: 0;
-        width: 65%;
         color: var(--font-color);
+        background: transparent;
     }
     .laptop p{
-        background-color: rgba(75, 29, 29, 0.5);
-        width: 90px;
-        height: 30px;
-        padding-top: 5px;
+        width: 75px;
+        height: 20px;
+        padding-top: 3px;
+        font-size: 0.9rem;
+        border-radius: 20px;
+    }
+    .laptop a {
+        display: inline-block;
+    }
+    .laptop > p{
+        background: linear-gradient(to right, #f7c8d8, #c8d9f7);
+        color: black;
+        width: 100px;
+        text-align: center;
+        padding-top: 0;
+        margin-left: 800px;
+    }
+    .sidebar h2, .sidebar h3, .sidebar p{
+        text-align: start;
+    }
+    .sidebar h2 {
+        width: 100px;
+        border-bottom: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: white;
+    }
+    .sidebar h3{
+        margin-top: 80px;
+        margin-bottom: 4px;
+        color: grey;
+        border-top: 1px solid gray;
+        padding-top: 10px;
+    }
+    .sidebar p{
+        margin-top: 0;
+        color: white;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .sidebar .icons {
+        font-size: 20px;
+        margin-top: 70px;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .sidebar p:last-of-type {
+       background: linear-gradient(to right, #f7c8d8, #c8d9f7);
+       color: black;
+       text-align: center; 
+       height: 30px;
+       padding-top: 6px;
+       border-radius: 10px;
+    }
+    .sidebar img{
+        border-radius: 0 50px;
+        transition: transform 0.4s ease-in-out;
+        height: 300px;
+        width: 300px;
+    }
+    .sidebar img:hover {
+       transform: scale(1.2);
+    }
+    #home {
+        display: none;
+    }
+    #laptop_cert div {
+        margin-left: 120px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "tlcm ml"
+                             "python se"
+                             "rd rd";
+    }
+    .tlcm {
+        grid-area: tlcm;
+    }
+    .ml {
+        grid-area: ml;
+    }
+    .python {
+        grid-area: python;
+    }
+    .se {
+        grid-area: se;
+    }
+    .rd {
+        grid-area: rd;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*dark mode*/
+    body {
+
+    }
+    .mode-switch input {
+        display: none;
+    }
+    .mode-switch i {
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 90px;
+    }
+    .mode-switch input:checked ~ .nav {
+       background-color: #ffffff;
+       color: #000000;
+    }
+    h1, h2 {
+        border-bottom: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: transform 0.4s ease-in-out;
+    }
+    h2:hover {
+        transform: scale(1.2);
+    }
+    h1:hover {
+        transform: scale(1.2);
+    }
+    footer {
+        margin-left: 23%;
     }
 }
